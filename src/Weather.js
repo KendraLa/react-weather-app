@@ -21,7 +21,6 @@ export default function Weather(props) {
   }
 
   function search() {
-    //city
     const apiKey = "04bc9729bca28c954ae69403fa79befa";
     let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric
 `;
@@ -30,7 +29,6 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefaut();
-    //Search for a city
     search();
   }
 
