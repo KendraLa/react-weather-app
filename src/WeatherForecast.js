@@ -9,8 +9,8 @@ export default function WeatherForecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function handleForecastResponse(response) {
-    setLoaded(true);
     setForecast(response.data);
+    setLoaded(true);
   }
 
   if (loaded && props.city === forecast.city.name) {
